@@ -52,7 +52,7 @@ model = MNISTModel()
 
 # Training loop
 optimizer = torch.optim.SGD([model.W, model.b], lr=0.1)
-num_epochs = 2000
+num_epochs = 1000
 
 for epoch in range(num_epochs):
     # Forward pass
