@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 from torch.nn import init
 
 inputs = torch.tensor([[0,0], [0,1],[1,0],[1,1]], dtype=torch.float)
-targets = torch.tensor([[0],[1],[1],[0]], dtype=torch.float) # XOR outputs
+targets = torch.tensor([[0],[1],[1],[0]], dtype=torch.float)
 
 class XOROperator(nn.Module):
     def __init__(self):
