@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torchvision
 import torchvision.transforms as transforms
-
+from matplotlib import pyplot as plt
 
 print(torch.cuda.is_available())
 # Transformations
@@ -74,3 +74,8 @@ for epoch in range(20):
     print(f"Epoch {epoch+1}, Accuracy: {correct / total:.4f}")
 
 print("Training complete!")
+
+
+
+
+

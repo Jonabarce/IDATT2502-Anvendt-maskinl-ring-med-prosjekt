@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torchvision
 
+
+
 # Load observations from the mnist dataset. The observations are divided into a training set and a test set
 mnist_train = torchvision.datasets.MNIST('./data', train=True, download=True)
 x_train = mnist_train.data.reshape(-1, 1, 28, 28).float()  # torch.functional.nn.conv2d argument must include channels (1)
@@ -66,6 +68,7 @@ class ConvolutionalNeuralNetworkModel(nn.Module):
 
 
 model = ConvolutionalNeuralNetworkModel()
+
 
 # Optimize: adjust W and b to minimize loss using stochastic gradient descent
 optimizer = torch.optim.Adam(model.parameters(), 0.001)
