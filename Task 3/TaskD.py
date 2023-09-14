@@ -7,6 +7,13 @@ import torchvision.transforms as transforms
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Running on {device}")
 
+
+print(torch.__version__)
+
+
+
+
+
 # Transformasjoner
 transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
 
