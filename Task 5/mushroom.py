@@ -2,6 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.manifold import TSNE
+
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
 def load_data():
     url = "https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/agaricus-lepiota.data"
     column_names = ["class", "cap-shape", "cap-surface", "cap-color", "bruises", "odor", "gill-attachment", "gill-spacing",
