@@ -141,6 +141,10 @@ def train_cartpole():
         if episode % 10 == 0:
             print(f"Episode: {episode}, Reward: {episode_reward}, Epsilon: {epsilon}")
 
+        if episode_reward >= 195:
+            print(f"Solved in {episode} episodes!")
+            break
+
     env.close()
 
 if __name__ == "__main__":
