@@ -10,7 +10,7 @@ from collections import deque
 env = gym.make("CartPole-v1", render_mode="human")
 
 # Hyperparameters
-episodes = 10000
+episodes = 1000
 learning_rate = 0.001
 gamma = 0.995
 epsilon_start = 1.0
@@ -140,10 +140,6 @@ def train_cartpole():
 
         if episode % 10 == 0:
             print(f"Episode: {episode}, Reward: {episode_reward}, Epsilon: {epsilon}")
-
-        if episode_reward >= 195:
-            print(f"Solved in {episode} episodes!")
-            break
 
     env.close()
 

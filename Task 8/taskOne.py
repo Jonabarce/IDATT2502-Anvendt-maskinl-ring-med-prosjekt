@@ -1,7 +1,7 @@
 import gym
 import numpy as np
 
-episodes = 10000
+episodes = 1000
 learning_rate = 0.15
 gamma = 0.995
 epsilon = 0.1
